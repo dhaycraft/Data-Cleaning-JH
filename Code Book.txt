@@ -1,70 +1,370 @@
-==================================================================
-Human Activity Recognition Using Smartphones Dataset
-Version 1.0
-==================================================================
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
-==================================================================
+"Subject"
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+Subject number on which the measurement was taken
+Numeric
+1:30
+Units: No units
+"Activity"
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+Activity class on which the measurement was taken for each subject
+Character
+STANDING: Standing still
+SITTING: Sitting on a chair
+LAYING: Laying down on a table
+WALKING: Walking over a flat surface
+WALKING-DOWN: Walking down a fly of stairs
+WALKING-UP: Walking up a fly of stairs
+Units: No units
+The last 66 columns contain the arithmetic average for each of the different measurements taken on the 30 test subjects, such measurements can be summarized as follows:
 
-For each record it is provided:
-======================================
+![Variable summary.](UCI HAR Dataset/variables.png)
 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+##Detailed Description
 
-The dataset includes the following files:
-=========================================
+"Subject"
 
-- 'README.txt'
+Subject number on which the measurement was taken
+Numeric
+1:30
+Units: No units
+"Activity"
 
-- 'features_info.txt': Shows information about the variables used on the feature vector.
+Activity class on which the measurement was taken for each subject
+Character
+STANDING: Standing still
+SITTING: Sitting on a chair
+LAYING: Laying down on a table
+WALKING: Walking over a flat surface
+WALKING-DOWN: Walking down a fly of stairs
+WALKING-UP: Walking up a fly of stairs
+Units: No units
+"Mean of the Mean of timely body measure in accelerator in the X axis"
 
-- 'features.txt': List of all features.
+Average of the mean of the acceleration taken of the body by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely body measure in accelerator in the Y axis"
 
-- 'activity_labels.txt': Links the class labels with their activity name.
+Average of the mean of the acceleration taken of the body by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely body measure in accelerator in the Z axis"
 
-- 'train/X_train.txt': Training set.
+Average of the mean of the acceleration taken of the body by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely body measure in accelerator in the X axis"
 
-- 'train/y_train.txt': Training labels.
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely body measure in accelerator in the Y axis"
 
-- 'test/X_test.txt': Test set.
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely body measure in accelerator in the Z axis"
 
-- 'test/y_test.txt': Test labels.
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely gravity measure in accelerator in the X axis"
 
-The following files are available for the train and test data. Their descriptions are equivalent. 
+Average of the mean of the acceleration taken of gravity by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely gravity measure in accelerator in the Y axis"
 
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+Average of the mean of the acceleration taken of gravity by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely gravity measure in accelerator in the Z axis"
 
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+Average of the mean of the acceleration taken of gravity by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely gravity measure in accelerator in the X axis"
 
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+Average of the standard deviation of the acceleration taken of gravity by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely gravity measure in accelerator in the Y axis"
 
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+Average of the standard deviation of the acceleration taken of gravity by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely gravity measure in accelerator in the Z axis"
 
-Notes: 
-======
-- Features are normalized and bounded within [-1,1].
-- Each feature vector is a row on the text file.
+Average of the standard deviation of the acceleration taken of gravity by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely body measure in accelerator -jerk signals- in the X axis"
 
-For more information about this dataset contact: activityrecognition@smartlab.ws
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of timely body measure in accelerator -jerk signals- in the Y axis"
 
-License:
-========
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of timely body measure in accelerator -jerk signals- in the Z axis"
 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of timely body measure in accelerator -jerk signals- in the X axis"
 
-This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the X direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of timely body measure in accelerator -jerk signals- in the Y axis"
 
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the Y direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of timely body measure in accelerator -jerk signals- in the Z axis"
+
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the Z direction on a regular time domain.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of timely body measure in gyroscope in the X axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the X direction on a regular time domain.
+Numerical
+Units: radians/second
+"Mean of the Mean of timely body measure in gyroscope in the Y axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the Y direction on a regular time domain.
+Numerical
+Units: radians/second
+"Mean of the Mean of timely body measure in gyroscope in the Z axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the Z direction on a regular time domain.
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of timely body measure in gyroscope in the X axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the X direction on a regular time domain.
+Numerical
+nits: radians/second
+"Mean of the Standard deviation of timely body measure in gyroscope in the Y axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the Y direction on a regular time domain.
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of timely body measure in gyroscope in the Z axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the Z direction on a regular time domain.
+Numerical
+Units: radians/second
+"Mean of the Mean of timely body measure in gyroscope -jerk signals- in the X axis"
+
+Average of the mean of the derivative of the angular velocity taken of the body by the gyroscope in the X direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Mean of timely body measure in gyroscope -jerk signals- in the Y axis"
+
+Average of the mean of the derivative of the angular velocity taken of the body by the gyroscope in the Y direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Mean of timely body measure in gyroscope -jerk signals- in the Z axis"
+
+Average of the mean of the derivative of the angular velocity taken of the body by the gyroscope in the Z direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Standard deviation of timely body measure in gyroscope -jerk signals- in the X axis"
+
+Average of the standard deviation of the derivative of the angular velocity taken of the body by the gyroscope in the X direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Standard deviation of timely body measure in gyroscope -jerk signals- in the Y axis"
+
+Average of the standard deviation of the derivative of the angular velocity taken of the body by the gyroscope in the Y direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Standard deviation of timely body measure in gyroscope -jerk signals- in the Z axis"
+
+Average of the standard deviation of the derivative of the angular velocity taken of the body by the gyroscope in the Z direction on a regular time domain.
+Numerical
+Units: radians/second^2^
+"Mean of the Mean of timely body measure in accelerator (magnitude) "
+
+Average of the mean of the magnitude of the acceleration taken of the body by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely body measure in accelerator (magnitude) "
+
+Average of the standard deviation of the magnitude of the acceleration taken of the body by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely gravity measure in accelerator (magnitude) "
+
+Average of the mean of the magnitude of the acceleration taken of gravity by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of timely gravity measure in accelerator (magnitude) "
+
+Average of the standard deviation of the magnitude of the acceleration taken of gravity by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of timely body measure in accelerator -jerk signals- (magnitude) "
+
+Average of the mean of the magnitude of the derivative of the acceleration taken of gravity by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of timely body measure in accelerator -jerk signals- (magnitude) "
+
+Average of the standard deviation of the magnitude of the derivative of the acceleration taken of gravity by the accelerometer using Euclidean metrics.
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of timely body measure in gyroscope (magnitude) "
+
+Average of the mean of the magnitude of the angular velocity of the body taken by the gyroscope using Euclidean metrics.
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of timely body measure in gyroscope (magnitude) "
+
+Average of the standard deviation of the magnitude of the angular velocity of the body taken by the gyroscope using Euclidean metrics.
+Numerical
+Units: radians/second
+"Mean of the Mean of timely body measure in gyroscope -jerk signals- (magnitude) "
+
+Average of the mean of the magnitude of the derivative of the angular velocity of the body taken by the gyroscope using Euclidean metrics.
+Numerical
+Units: radians/second^2^
+"Mean of the Standard deviation of timely body measure in gyroscope -jerk signals- (magnitude) "
+
+Average of the standard deviation of the magnitude of the derivative of the angular velocity of the body taken by the gyroscope using Euclidean metrics.
+Numerical
+Units: radians/second^2^
+"Mean of the Mean of FFT of body measure in accelerator in the X axis"
+
+Average of the mean of the acceleration taken of the body by the accelerometer in the X direction on a regular domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of FFT of body measure in accelerator in the Y axis"
+
+Average of the mean of the acceleration taken of the body by the accelerometer in the Y direction on a regular domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of FFT of body measure in accelerator in the Z axis"
+
+Average of the mean of the acceleration taken of the body by the accelerometer in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of FFT of body measure in accelerator in the X axis"
+
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the X direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of FFT of body measure in accelerator in the Y axis"
+
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the Y direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of FFT of body measure in accelerator in the Z axis"
+
+Average of the standard deviation of the acceleration taken of the body by the accelerometer in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of FFT of body measure in accelerator -jerk signals- in the X axis"
+
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the X direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of FFT of body measure in accelerator -jerk signals- in the Y axis"
+
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the Y direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of FFT of body measure in accelerator -jerk signals- in the Z axis"
+
+Average of the mean of the derivative of the acceleration taken of the body by the accelerometer in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of FFT of body measure in accelerator -jerk signals- in the X axis"
+
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the X direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of FFT of body measure in accelerator -jerk signals- in the Y axis"
+
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the Y direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of FFT of body measure in accelerator -jerk signals- in the Z axis"
+
+Average of the standard deviation of the derivative of the acceleration taken of the body by the accelerometer in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of FFT of body measure in gyroscope in the X axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the X direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Mean of FFT of body measure in gyroscope in the Y axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the Y direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Mean of FFT of body measure in gyroscope in the Z axis"
+
+Average of the mean of the angular velocity taken of the body by the gyroscope in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of FFT of body measure in gyroscope in the X axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the X direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of FFT of body measure in gyroscope in the Y axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the Y direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of FFT of body measure in gyroscope in the Z axis"
+
+Average of the standard deviation of the angular velocity taken of the body by the gyroscope in the Z direction on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Mean of FFT of body measure in accelerator (magnitude) "
+
+Average of the mean of the magnitude of the acceleration taken of the body by the accelerometer using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Standard deviation of FFT of body measure in accelerator (magnitude) "
+
+Average of the standard deviation of the magnitude of the acceleration taken of the body by the accelerometer using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units -g-
+"Mean of the Mean of FFT of body measure in accelerator -jerk signals- (magnitude) "
+
+Average of the mean of the magnitude of the derivative of the acceleration taken of gravity by the accelerometer using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Standard deviation of FFT of body measure in accelerator -jerk signals- (magnitude) "
+
+Average of the standard deviation of the magnitude of the derivative of the acceleration taken of gravity by the accelerometer using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: Normalized gravity units over time -g/t-
+"Mean of the Mean of FFT of body measure in gyroscope (magnitude) "
+
+Average of the mean of the magnitude of the angular velocity of the body taken by the gyroscope using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Standard deviation of FFT of body measure in gyroscope (magnitude) "
+
+Average of the standard deviation of the magnitude of the angular velocity of the body taken by the gyroscope using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second
+"Mean of the Mean of FFT of body measure in gyroscope -jerk signals- (magnitude) "
+
+Average of the mean of the magnitude of the derivative of the angular velocity of the body taken by the gyroscope using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second^2^
+"Mean of the Standard deviation of FFT of body measure in gyroscope -jerk signals- (magnitude) "
+
+Average of the standard deviation of the magnitude of the derivative of the angular velocity of the body taken by the gyroscope using Euclidean metrics on a frequency domain (Fast Fourier Transform applied).
+Numerical
+Units: radians/second^2^
