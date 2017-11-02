@@ -2,7 +2,7 @@
 Final Project for Data Cleaning and Prep Coursera Johns Hopkins Course
 1. Tidy Data Set is included in TidyData.TXT
 2. run_analysis.R   
-contains the necessary R code to conduct the data cleaning as described in the project.
+-Unzips Data into workspace and reads files into R environment.
 -Merges the training and the test sets to create one data set.
 -Extracts only the measurements on the mean and standard deviation for each measurement.
 -Uses descriptive activity names to name the activities in the data set
